@@ -1,6 +1,6 @@
 version: '3'
 services:
-  catalog-module:
+  Catalog-Module:
     image: siddhanthhn/catalog-service
     ports: 
      - "8000:80"
@@ -15,7 +15,7 @@ services:
     ports:
      - "8100:100"
   Main-Page:
-    image: vishwacloudlab/main-page
+    image: siddhanthhn/main-page
     build: .
     ports:
      - "8200:80"
