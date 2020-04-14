@@ -14,3 +14,8 @@ services:
     image: siddhanthhn/order-service
     ports:
      - "8100:100"
+  Main-Page:
+    image: vishwacloudlab/main-page
+    build: .
+    ports:
+     - "8200:80"
