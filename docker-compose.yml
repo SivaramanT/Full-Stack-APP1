@@ -1,41 +1,16 @@
 version: '3'
-
 services:
   catalog-module:
     image: siddhanthhn/catalog-service
     ports: 
      - "8000:80"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.001'
-          memory: 50M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   redis:
     image: redis:alpine
   Review-Module:
     image: siddhanthhn/review-service
     ports:
      - "8050:90"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.001'
-          memory: 50M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
   Order-Module:
     image: siddhanthhn/order-service
     ports:
      - "8100:100"
-    deploy:
-      resources:
-        limits:
-          cpus: '0.001'
-          memory: 50M
-        reservations:
-          cpus: '0.0001'
-          memory: 20M
