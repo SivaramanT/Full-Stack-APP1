@@ -3,19 +3,19 @@ services:
   Catalog-Module:
     image: siddhanthhn/catalog-service
     ports: 
-     - "8001:80"
+     - "8005:80"
   redis:
     image: redis:alpine
   Review-Module:
     image: siddhanthhn/review-service
     ports:
-     - "8051:90"
+     - "8055:90"
   Order-Module:
     image: siddhanthhn/order-service
     ports:
-     - "8101:100"
+     - "8105:100"
   Main-Page:
     image: siddhanthhn/main-page
     build: .
     ports:
-     - "8201:80"
+     - "8205:80"
