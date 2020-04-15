@@ -1,21 +1,21 @@
 version: '3'
 services:
   Catalog-Module:
-    image: siddhanthhn/catalog-service
+    image: saha94/catalog-service
     ports: 
      - "8005:80"
   redis:
     image: redis:alpine
   Review-Module:
-    image: siddhanthhn/review-service
+    image: saha94/review-service
     ports:
      - "8055:90"
   Order-Module:
-    image: siddhanthhn/order-service
+    image: saha94/order-service
     ports:
      - "8105:100"
   Main-Page:
-    image: siddhanthhn/main-page
+    image: saha94/main-page
     build: .
     ports:
      - "8205:80"
